@@ -1,0 +1,12 @@
+.logo-interactive {
+  text-decoration: none;
+  font-family: "Michroma", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #e6edf3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #00f3ff, -1px -1px 0px #ff00e6;
+  transition: all 0.3s ease;
+  position: relative;
+}

@@ -1,0 +1,71 @@
+.main-header {
+  background-color: #161b22;
+  padding: 15px 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  min-height: 5.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-interactive {
+  text-decoration: none;
+  font-family: "Michroma", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #e6edf3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #00f3ff, -1px -1px 0px #ff00e6;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.logo-interactive:hover {
+  color: #00f3ff;
+  text-shadow: 0 0 12px #00f3ff;
+  letter-spacing: 1.5px;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 4vw;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #8d98a7;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #00f3ff;
+  text-shadow: 0 0 8px #00f3ff;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
