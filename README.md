@@ -1,16 +1,34 @@
-# React + Vite
+# 🇧🇷 Sobre o Projeto (Português)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **CAPACITY** é uma empresa ficcional especializada no design e fabricação de *artisan keycaps* (teclas artesanais) para teclados mecânicos. O diferencial reside na individualização: cada peça seria única e fabricada sob demanda através de pedidos diretos dos clientes, unindo engenharia de precisão e arte manual personalizada.
 
-Currently, two official plugins are available:
+Este site é uma Landing Page desenvolvida como critério de avaliação para o processo de trainee da **Pixel Junior**. O objetivo foi construir uma interface que transmita a exclusividade e a alta tecnologia por trás de cada tecla produzida.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tecnologias e Padrões
+- **React + Vite**: Para uma interface de alta performance.
+- **CSS3 & Bootstrap**: Estilização personalizada com atenção para responsividade.
+- **Conventional Commits**: Padronização de mensagens de commit para clareza no histórico.
+- **Feature Branches**: Desenvolvimento organizado através de branches e Pull Requests.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🇬🇧 About the Project (English)
 
-## Expanding the ESLint configuration
+**CAPACITY** is a fictional company specialized in the design and manufacturing of *artisan keycaps* for mechanical keyboards. The brand concept is built on individualization: every single piece would be unique and manufactured on-demand through direct customer orders, blending precision engineering with personalized handcrafted art.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This website is a Landing Page developed as an evaluation requirement for the **Pixel Junior Enterprise** trainee process. The goal was to build an interface that reflects the exclusivity and high-tech nature behind every keycap produced.
+
+### Technologies and Standards
+- **React + Vite**: For a high-performance interface.
+- **CSS3 & Bootstrap**: Custom styling with a focus on responsiveness.
+- **Conventional Commits**: Standardized commit messages for a clear history.
+- **Feature Branches**: Organized development using branches and Pull Requests.
+
+---
+
+## ⚙️ Como executar / How to run
+1. Instale as dependências / Install dependencies: `npm install`
+2. Inicie o servidor / Start the server: `npm run dev`
+
+---
+Desenvolvido por / Developed by [Rafael Ramunieh](https://github.com/rafaelramunieh)
