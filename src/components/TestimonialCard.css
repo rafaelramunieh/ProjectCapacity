@@ -1,0 +1,36 @@
+.testimonial-card {
+  padding: 50px 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #00f3ff;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.user-name {
+  display: block;
+  color: #00f3ff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-rating {
+  color: #ffaa00;
+  letter-spacing: 5px;
+  text-shadow: 0 0 8px #efe1b1;
+}
+
+.user-comment {
+  margin-top: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #e6edf3;
+}
