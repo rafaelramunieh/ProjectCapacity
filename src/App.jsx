@@ -6,6 +6,7 @@ import About from "./components/About";
 import HowToOrder from "./components/HowToOrder";
 import Benefits from "./components/Benefits";
 import Testimonials from "./components/Testimonials";
+import Comission from "./components/Comission";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <HowToOrder />
       <Benefits />
       <Testimonials />
+      <Comission />
     </>
   );
 }

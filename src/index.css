@@ -49,6 +49,12 @@ h2 {
   letter-spacing: 2px;
   text-shadow: 0 0 5px rgba(141, 152, 167, 0.3);
 }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}
 
 @media (max-width: 768px) {
   .menu-toggle {
@@ -137,5 +143,86 @@ h2 {
     transform: rotate(90deg);
     margin: 10px 0;
     font-size: 20px;
+  }
+}
+
+/* Global animations */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes startup-flicker {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes steady-glow {
+  from {
+    opacity: 1;
+    filter: brightness(0.8);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes neon-pulse {
+  from {
+    text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff;
+  }
+  to {
+    text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 30px #00f3ff;
   }
 }

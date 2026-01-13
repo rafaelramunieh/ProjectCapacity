@@ -1,0 +1,131 @@
+.cta-section {
+  padding: 100px 25px;
+  background-color: #0d1117;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.cta-title {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #e6edf3;
+  font-family: "Michroma", sans-serif;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: #161b22;
+  padding: 40px;
+  border: 1px solid #2c363f;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #00f3ff;
+  letter-spacing: 2px;
+}
+
+.input-group input,
+.input-group textarea {
+  background: #0d1117;
+  border: 1px solid #2c363f;
+  padding: 12px;
+  color: #e6edf3;
+  font-family: "Roboto Mono", monospace;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #00f3ff;
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+}
+
+.submit-btn {
+  background: transparent;
+  border: 1px solid #00f3ff;
+  color: #00f3ff;
+
+  padding: 15px;
+  font-family: "Michroma", sans-serif;
+  font-size: clamp(1px, 2.5vw, 16px);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.submit-btn:hover {
+  animation: startup-flicker 0.4s linear 2,
+    steady-glow 1.5s ease-in-out 0.8s infinite alternate;
+
+  background: rgba(0, 243, 255, 0.15);
+  color: #ffffff;
+  border-color: #ffffff;
+
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
+  text-shadow: 0 0 8px #00f3ff;
+  opacity: 1;
+}
+
+.social-links a:hover {
+  color: #00f3ff;
+  text-shadow: 0 0 8px #00f3ff;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-row .input-group {
+  flex: 1;
+}
+
+.input-group.full-width {
+  width: 100%;
+}
+
+.cyber-select {
+  background: #0d1117;
+  border: 1px solid #2c363f;
+  padding: 12px;
+  color: #00f3ff;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+}
+
+.cyber-select:focus {
+  border-color: #00f3ff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
