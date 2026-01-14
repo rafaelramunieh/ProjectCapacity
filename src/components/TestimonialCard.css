@@ -1,9 +1,11 @@
 .testimonial-card {
-  padding: 50px 70px;
+  padding: 40px 60px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .user-photo {
@@ -33,4 +35,6 @@
   font-style: italic;
   line-height: 1.6;
   color: #e6edf3;
+  margin-bottom: 0;
+  max-width: 80%;
 }

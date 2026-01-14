@@ -24,6 +24,19 @@
   border: 2px solid #2c363f;
   background: #161b22;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+.carousel-inner {
+  flex: 1;
+  display: flex;
+}
+
+.carousel-item {
+  height: auto;
 }
 
 .nav-btn {
