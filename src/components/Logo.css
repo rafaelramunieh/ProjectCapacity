@@ -10,3 +10,8 @@
   transition: all 0.3s ease;
   position: relative;
 }
+.logo-interactive:hover {
+  color: #00f3ff;
+  text-shadow: 0 0 12px #00f3ff;
+  letter-spacing: 1.5px;
+}
