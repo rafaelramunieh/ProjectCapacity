@@ -7,6 +7,7 @@ import HowToOrder from "./components/HowToOrder";
 import Benefits from "./components/Benefits";
 import Testimonials from "./components/Testimonials";
 import Comission from "./components/Comission";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Benefits />
       <Testimonials />
       <Comission />
+      <Footer />
     </>
   );
 }
