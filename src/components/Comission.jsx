@@ -4,15 +4,26 @@ import "./Comission.css";
 const Comission = () => {
   const [customProfile, setCustomProfile] = useState(false);
   const [customSwitch, setCustomSwitch] = useState(false);
+  const [sent, setFormSent] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("TRANSMISSION_RECEIVED: We will contact you soon.");
+    setFormSent(true);
+    e.target.reset();
+    setCustomProfile(false);
+    setCustomSwitch(false);
+    setTimeout(() => setFormSent(false), 5000);
   };
 
   return (
     <section className="cta-section" id="contact">
-      <div className="cta-container">
+      <div className="cta-container" style={{ position: "relative" }}>
+        {sent && (
+          <div className="form-success-msg">
+            <span className="blink-text">›</span>SYSTEM_UPDATE:
+            ORDER_RECEIVED_SUCCESSFULLY
+          </div>
+        )}
         <span className="section-tag">
           // ACTION_REQUIRED: UPLINK_CONNECTION
         </span>
