@@ -77,8 +77,16 @@
     min-height: auto;
   }
 
+  .footer-col.left,
+  .footer-col.right,
   .footer-col {
     align-items: center;
+    text-align: center;
     gap: 15px;
+  }
+
+  .social-links {
+    justify-content: center;
+    width: 100%;
   }
 }

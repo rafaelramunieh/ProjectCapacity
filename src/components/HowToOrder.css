@@ -42,7 +42,7 @@
 .step-number {
   font-size: 32px;
   font-weight: bold;
-  color: rgba(0, 243, 255, 0.1); /* Número grande e sutil no fundo */
+  color: rgba(0, 243, 255, 0.1);
   position: absolute;
   top: 5px;
   right: 15px;
@@ -51,14 +51,14 @@
 .step-item h4 {
   color: #00f3ff;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
 }
 
 .step-item p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
   color: #8d98a7;
   margin: 0;
@@ -68,5 +68,23 @@
   align-self: center;
   color: #2c363f;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .step-item {
+    min-width: 95vw;
+  }
+
+  .step-divider {
+    transform: rotate(90deg);
+    margin: 10px 0;
+    font-size: 20px;
+  }
 }

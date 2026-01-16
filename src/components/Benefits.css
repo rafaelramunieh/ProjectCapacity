@@ -38,7 +38,6 @@
   border-color: #00f3ff;
   transform: translateY(-5px);
   filter: drop-shadow(6px 6px 0px #00f3ff);
-  cursor: pointer;
 }
 
 .card-header {
