@@ -24,28 +24,73 @@
   border: 2px solid #2c363f;
   background: #161b22;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-
   display: flex;
   flex-direction: column;
   min-height: 350px;
 }
 
 .carousel-inner {
-  flex: 1;
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  flex: 1;
 }
 
 .carousel-item {
-  min-width: 80%;
+  min-width: 100%;
   width: 100%;
-  height: auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  padding: 40px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.user-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #00f3ff;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.user-name {
+  display: block;
+  color: #00f3ff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.user-rating {
+  color: #ffaa00;
+  letter-spacing: 5px;
+  text-shadow: 0 0 8px #efe1b1;
+}
+
+.user-comment {
+  margin-top: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #e6edf3;
+  margin-bottom: 0;
+  max-width: 80%;
+  word-wrap: break-word;
 }
 
 .nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 243, 255, 0.1);
+  background: rgba(0, 243, 255, 0.5);
   border: 1px solid #00f3ff;
   color: #00f3ff;
   padding: 10px;
@@ -62,20 +107,51 @@
 .prev {
   left: 10px;
 }
+
 .next {
   right: 10px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(66%) sepia(90%) saturate(3000%) hue-rotate(150deg)
-    brightness(100%) contrast(100%);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #00f3ff;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-  font-family: "Michroma", sans-serif;
+@media (max-width: 768px) {
+  #testimonial-carousel {
+    max-width: 100%;
+    height: 480px;
+    min-height: 480px;
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+
+  .testimonial-card {
+    padding: 20px 30px;
+  }
+
+  .user-comment {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .nav-btn {
+    padding: 8px;
+    font-size: 12px;
+    background: #00f3ff;
+    color: #0d1117;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  #testimonial-carousel {
+    height: 520px;
+    min-height: 520px;
+  }
 }
