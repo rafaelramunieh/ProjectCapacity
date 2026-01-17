@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import HowToOrder from "./components/HowToOrder";
-import Benefits from "./components/Benefits";
-import Testimonials from "./components/Testimonials";
-import Comission from "./components/Comission";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import HowToOrder from "./components/HowToOrder/HowToOrder";
+import Benefits from "./components/Benefits/Benefits";
+import Testimonials from "./components/TestimonialSection/Testimonials";
+import Comission from "./components/Comission/Comission";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
